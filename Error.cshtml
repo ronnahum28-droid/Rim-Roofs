@@ -1,0 +1,10 @@
+@page
+@model ErrorModel
+@{ ViewData["Title"] = "אירעה שגיאה"; }
+<main id="main" class="container content-page">
+<p class="eyebrow">RIM ROOFS</p>
+<h1>משהו לא הסתדר.</h1>
+<p>לא ניתן להשלים את הבקשה כרגע. אפשר לחזור לעמוד הבית ולנסות שוב.</p>
+@if (Model.ShowRequestId) { <p>מזהה בקשה: <code dir="ltr">@Model.RequestId</code></p> }
+<a href="/" class="button">חזרה לעמוד הבית <span>←</span></a>
+</main>
